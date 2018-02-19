@@ -12,12 +12,11 @@ def match(arr_words)
   while i < arr_words.length
     if word.split("").sort == arr_words[i].split("").sort
       new_arr << arr_words[i]
-        end
-          return new_arr
-    if word.split("").sort != arr_words[i].split("").sort
+    else word.split("").sort != arr_words[i].split("").sort
       return []
         end
-        i += 1
+      i += 1
     end
+    return new_arr
   end
 end
