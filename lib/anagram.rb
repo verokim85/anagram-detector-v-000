@@ -7,25 +7,18 @@ end
 
 def match(arr_words)
   x = []
-  z = []
 
   i = 0
     while i < arr_words.length
-      x << arr_words[i].split("")
+      x << arr_words[i].split("").sort
       i += 1
+      return x 
   end
-
-  num = 0
-    while num < x.length
-     z << x[num].sort
-    num += 1
-  end
-      z
 
   if word != z
     return []
   elsif z == word
-
+    
 end
 end
 
