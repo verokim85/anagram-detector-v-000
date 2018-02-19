@@ -30,7 +30,7 @@ def match(arr_words)
 
   if word != @@all
     return []
-  elsif word == @@all
+  elsif z == @@all
     return word
 end
 end
