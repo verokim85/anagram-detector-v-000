@@ -3,13 +3,13 @@ attr_accessor :word
 @@all = []
 
 def self.all
-  @@all 
-end 
+  @@all
+end
 
 def initialize(word)
   @word = word
   @@all << self
-end 
+end
 
 def match(arr_words)
   x = []
@@ -28,7 +28,7 @@ def match(arr_words)
   end
       z
 
-  if word != @@all 
+  if word != @@all
     return []
 
 end
