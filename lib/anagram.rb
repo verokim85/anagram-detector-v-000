@@ -16,7 +16,7 @@ def match(arr_words)
     end
       return x
 
-      if word.sort == x.join
+      if word.split(",").sort == x.join
           x.each {|new_word|
           new_arr << new_word == word.sort  }
        return new_arr
