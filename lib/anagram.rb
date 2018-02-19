@@ -1,6 +1,8 @@
 class Anagram
-attr_accessor :match 
+attr_accessor :word
 
 
 
-end 
+
+
+end
