@@ -28,7 +28,7 @@ def match(arr_words)
   end
       z
 
-  if word != @@all
+  if word != z
     return []
   elsif z == @@all
     return word
