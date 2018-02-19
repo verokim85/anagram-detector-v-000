@@ -7,6 +7,7 @@ end
 
 def match(arr_words)
   x = []
+  new_arr = []
 
   i = 0
     while i < arr_words.length
@@ -15,10 +16,10 @@ def match(arr_words)
     end
       return x
 
-      if word.sort == x
-      x.each {|new_word|
-       z << new_word == word.sort  }
-       return z.join
+      if word.sort == x.join
+          x.each {|new_word|
+          new_arr << new_word == word.sort  }
+       return z
      elsif word.sort != x
        return []
 
