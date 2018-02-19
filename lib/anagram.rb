@@ -1,5 +1,15 @@
 class Anagram
 attr_accessor :word
+@@all = []
+
+def self.all
+  @@all 
+end 
+
+def initialize(word)
+  @word = word
+  @@all << self
+end 
 
 def match(arr_words)
   x = []
@@ -18,7 +28,7 @@ def match(arr_words)
   end
       z
 
-  if word != z
+  if word != @@all 
     return []
 
 end
