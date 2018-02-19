@@ -30,7 +30,8 @@ def match(arr_words)
 
   if word != @@all
     return []
-
+  elsif z.detect{|ar_words| ar_words.word == word}
+    return word
 end
 end
 
