@@ -15,7 +15,7 @@ def match(arr_words)
     end 
       return x
 
-  if word != z
+  if word.sort != x
     return []
   elsif z == word
 
