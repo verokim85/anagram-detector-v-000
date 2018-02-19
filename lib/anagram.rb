@@ -22,10 +22,8 @@ def match(arr_words)
                return new_arr
          else
            return []
-      end 
-    end 
+      end
+    end
+  end
 end
-end
-
-
 end
