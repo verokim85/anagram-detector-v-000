@@ -20,7 +20,7 @@ def match(arr_words)
           x.each {|new_word|
           new_arr << new_word == word.sort  }
        return new_arr
-     elsif word.sort != x
+     elsif word.sort != x.join
        return []
 
 end
