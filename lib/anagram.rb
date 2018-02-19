@@ -15,9 +15,9 @@ def match(arr_words)
     end
       return x
 
-  if word.sort != x
-    return []
-  elsif z == word
+      if x.each {|new_word|
+       z << new_word == word.sort  }
+     p  return z
 
 end
 end
