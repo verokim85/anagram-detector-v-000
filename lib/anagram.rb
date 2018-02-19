@@ -16,12 +16,12 @@ def match(arr_words)
     end
       return x
 
-      if word.split(",").sort == x
-          x.each {|new_word|
-          new_arr << new_word == word.sort  }
-       return new_arr
-     elsif word.sort != x.join
-       return []
+      x.each {|new_word|
+         if new_word == word.split(",").sort  }
+               new_arr << new_word
+               return new_arr   
+         else 
+           return []
 
 end
 end
